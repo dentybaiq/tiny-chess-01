@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/dentybaiq/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/dentybaiq/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A tiny chess engine in 3,018 bytes of Python: alpha-beta search with null-move pruning, a transposition table, killer/history move ordering and quiescence search over a 0x88 board with piece-square tables, searching a fixed 50,000 nodes per move, with a mate-in-1 guard on its chosen move. It plays the house gauntlet through the make.fun env over HTTP; its readable source is `src.py`, packed into `main.py` with the kit's lzma compressor.
+A tiny chess engine in 4,057 bytes of Python: iterative-deepening alpha-beta over a 0x88 board with a Zobrist transposition table, PVS with late-move reductions, null-move pruning and check extensions, quiescence over captures and promotions, and an incremental tapered (middlegame/endgame) piece-square evaluation with bishop-pair and passed-pawn terms plus repetition detection, searching a fixed 100,000 nodes per move with a mate-in-1 guard on its chosen move. It plays the house gauntlet through the make.fun env over HTTP; its readable source is `src.py`, packed into `main.py` with the kit's lzma compressor.
 
 ## Run it
 
